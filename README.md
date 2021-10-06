@@ -1,1 +1,4 @@
 # jikken-igaku
+
+これはサンプルファイルです。
+Rstudioによるcommit
