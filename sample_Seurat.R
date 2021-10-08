@@ -5,8 +5,10 @@ library(patchwork)
 pbmc <- readRDS("./data/pbmc3k.rds")
 
 DimPlot(pbmc, reduction = "umap")
-#IL7R, CCR7	→ Naive CD4+ T
-#IL7R, S100A4	→ Memory CD4+
+
+# マーカー遺伝子 → 細胞種
+# IL7R, CCR7	→ Naive CD4+ T
+# IL7R, S100A4	→ Memory CD4+
 
 FeaturePlot(pbmc, features = c("IL7R", "CCR7", "S100A4"))
 
