@@ -1,11 +1,11 @@
 # 以下の2つのパッケージが必要なので、未導入であればインストールする
-# install.packages("usethis")
-# install.packages("credentials")
+#install.packages("usethis")
+#install.packages("credentials")
 
 # 1.RStudioでgitを使い変更履歴を管理する際、誰が変更しているのかという情報を設定する
 #   ために、以下のコマンドを実行する。
 
-usethis::use_git_config(user.name = "YourName", user.email = "your@mail.com")
+usethis::use_git_config(user.name = "JRAS-customer", user.email = "info+github@jras.co.jp")
 
 # ※YourNameとyour@mail.comはgithubに登録したものにする
 
@@ -17,10 +17,10 @@ credentials::credential_helper_get()
 # 上記以外の場合や、Linuxで、"cache" と表示された場合、次の行のコマンド
 # をコメントアウトを外して実行する。
 
-# credentials::credential_helper_set("store")
+#credentials::credential_helper_set("store")
 
 
-#### 3. 以下のコマンドを実行すると、ブラウザでgithubのPAT（Private Access Token）####
+#### 3. 以下のコマンドを実行すると、ブラウザでgithubのPAT（Personal Access Token）####
 ####    を生成する画面が開く。
 
 usethis::create_github_token()
