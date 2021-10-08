@@ -10,6 +10,9 @@ DimPlot(pbmc, reduction = "umap")
 # IL7R, CCR7	→ Naive CD4+ T
 # IL7R, S100A4	→ Memory CD4+
 
+############ コメント
+
+
 FeaturePlot(pbmc, features = c("IL7R", "CCR7", "S100A4"))
 
 
