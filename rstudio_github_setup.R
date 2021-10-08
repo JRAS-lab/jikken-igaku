@@ -5,7 +5,7 @@
 # 1.RStudioでgitを使い変更履歴を管理する際、誰が変更しているのかという情報を設定する
 #   ために、以下のコマンドを実行する。
 
-usethis::use_git_config(user.name = "JRAS-customer", user.email = "info+github@jras.co.jp")
+usethis::use_git_config(user.name = "YourName", user.email = "your@mail.com")
 
 # ※YourNameとyour@mail.comはgithubに登録したものにする
 
