@@ -10,13 +10,10 @@ DimPlot(pbmc, reduction = "umap")
 # IL7R, CCR7	→ Naive CD4+ T
 # IL7R, S100A4	→ Memory CD4+
 
-############ コメント
-
-
 FeaturePlot(pbmc, features = c("IL7R", "CCR7", "S100A4"))
 
 
-new.cluster.ids <- c("0", "1", "2", "3", "4", "5",
+new.cluster.ids <- c("Naive CD4+ T", "Memory CD4+", "2", "3", "4", "5",
                      "6", "7")
 names(new.cluster.ids) <- levels(pbmc)
 pbmc <- RenameIdents(pbmc, new.cluster.ids)
